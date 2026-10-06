@@ -1,0 +1,9 @@
+Model,Batch size,Panjang batch,Status,Memori puncak (GB),Detik per langkah
+roberta,16,256,OK,3.17,0.251
+roberta,32,256,OK,4.71,0.469
+roberta,64,256,OK,7.79,0.959
+roberta,128,256,OK,13.97,1.539
+distilbert,16,256,OK,1.66,0.111
+distilbert,32,256,OK,2.45,0.196
+distilbert,64,256,OK,4.02,0.362
+distilbert,128,256,OK,7.18,0.713

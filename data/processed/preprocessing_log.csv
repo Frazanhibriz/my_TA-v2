@@ -1,0 +1,7 @@
+Langkah,Sisa baris,Dibuang
+Data mentah,1010826,0
+Hapus comment kosong (NaN),1010771,55
+Hapus teks kosong setelah cleaning,1009362,1409
+Hapus pasangan berlabel bertentangan,1009220,142
+Hapus pasangan duplikat,1008073,1147
+Hapus artefak /s,1004248,3825

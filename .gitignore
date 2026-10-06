@@ -66,3 +66,8 @@ logs/
 *.idx
 *.ilg
 *.ind
+
+# Data turunan (besar, bisa dibuat ulang dari data/raw lewat notebook 02 dan 03)
+data/split/
+data/tokenized/
+data/tokenized_comment/

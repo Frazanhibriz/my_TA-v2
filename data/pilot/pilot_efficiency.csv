@@ -1,0 +1,7 @@
+Model,Learning rate,Jumlah parameter (juta),Waktu training (menit),Memori puncak training (GB),Latensi batch=1 (ms/sampel),Latensi batch=32 (ms/sampel)
+roberta,1e-05,124.6,18.4,4.75,12.55,2.077
+roberta,2e-05,124.6,18.39,4.75,17.93,2.071
+roberta,3e-05,124.6,18.41,4.75,13.12,2.095
+distilbert,1e-05,67.0,9.32,2.47,6.66,1.067
+distilbert,2e-05,67.0,9.32,2.47,6.53,1.085
+distilbert,3e-05,67.0,9.32,2.47,6.63,1.087

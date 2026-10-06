@@ -1,0 +1,42 @@
+{
+  "debug": false,
+  "seed": 42,
+  "models": {
+    "roberta": "roberta-base",
+    "distilbert": "distilbert-base-uncased"
+  },
+  "learning_rates": [
+    1e-05,
+    2e-05,
+    3e-05
+  ],
+  "num_epochs": 3,
+  "batch_size": 32,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "fp16": true,
+  "padding": "dynamic",
+  "device": "Tesla T4",
+  "torch_version": "2.11.0+cu128",
+  "transformers_version": "5.16.1",
+  "n_train": {
+    "roberta": 40000,
+    "distilbert": 40000
+  },
+  "n_val": {
+    "roberta": 20000,
+    "distilbert": 20000
+  },
+  "best": {
+    "distilbert": {
+      "learning_rate": 3e-05,
+      "epoch": 2,
+      "f1": 0.7251
+    },
+    "roberta": {
+      "learning_rate": 3e-05,
+      "epoch": 2,
+      "f1": 0.744
+    }
+  }
+}
