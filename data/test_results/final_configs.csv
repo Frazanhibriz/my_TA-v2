@@ -1,0 +1,24 @@
+run_id,gpu_dir,group,input,model,lr,seed,n_train_layers,best_epoch,val_macro_f1,locked_at
+R2_early_roberta_lr1e-05_s42,rtx5060ti,S1_utama,early,roberta,1e-05,42,all,3,0.7961513211300497,2026-10-13 23:53
+R2_early_distilbert_lr2e-05_s42,rtx5060ti,S1_utama,early,distilbert,2e-05,42,all,3,0.7744282006607832,2026-10-13 23:53
+R3_comment_roberta_lr2e-05_s42,rtx5060ti,S1_utama,comment,roberta,2e-05,42,all,3,0.7833798251283748,2026-10-13 23:53
+R3_comment_distilbert_lr2e-05_s42,rtx5060ti,S1_utama,comment,distilbert,2e-05,42,all,2,0.7677234475018784,2026-10-13 23:53
+R3_late_roberta_lr1e-05_s42,rtx5060ti,S1_utama,late,roberta,1e-05,42,all,3,0.7918419002632355,2026-10-13 23:53
+R3_late_distilbert_lr1e-05_s42,rtx5060ti,S1_utama,late,distilbert,1e-05,42,all,3,0.7766881503846561,2026-10-13 23:53
+S43_comment_roberta_lr2e-05_s43,rtx5070ti,S1_utama,comment,roberta,2e-05,43,all,3,0.7835875328481252,2026-10-13 23:53
+S43_comment_distilbert_lr2e-05_s43,rtx5070ti,S1_utama,comment,distilbert,2e-05,43,all,2,0.7660245592662367,2026-10-13 23:53
+S43_early_roberta_lr1e-05_s43,rtx5070ti,S1_utama,early,roberta,1e-05,43,all,3,0.7958623242586251,2026-10-13 23:53
+S43_early_distilbert_lr2e-05_s43,rtx5070ti,S1_utama,early,distilbert,2e-05,43,all,2,0.7755312928041598,2026-10-13 23:53
+S43_late_roberta_lr1e-05_s43,rtx5070ti,S1_utama,late,roberta,1e-05,43,all,3,0.7938650940937488,2026-10-13 23:53
+S43_late_distilbert_lr1e-05_s43,rtx5070ti,S1_utama,late,distilbert,1e-05,43,all,3,0.7769706764724001,2026-10-13 23:53
+S44_comment_roberta_lr2e-05_s44,rtx5070ti,S1_utama,comment,roberta,2e-05,44,all,3,0.7843755308857201,2026-10-13 23:53
+S44_comment_distilbert_lr2e-05_s44,rtx5070ti,S1_utama,comment,distilbert,2e-05,44,all,2,0.766564963912118,2026-10-13 23:53
+S44_early_roberta_lr1e-05_s44,rtx5070ti,S1_utama,early,roberta,1e-05,44,all,3,0.7960613659632315,2026-10-13 23:53
+S44_early_distilbert_lr2e-05_s44,rtx5070ti,S1_utama,early,distilbert,2e-05,44,all,2,0.7755295821854494,2026-10-13 23:53
+S44_late_roberta_lr1e-05_s44,rtx5070ti,S1_utama,late,roberta,1e-05,44,all,3,0.7913976682588916,2026-10-13 23:53
+S44_late_distilbert_lr1e-05_s44,rtx5070ti,S1_utama,late,distilbert,1e-05,44,all,3,0.7764871898222468,2026-10-13 23:53
+P2_early_distilbert_L0_lr1e-04_s42,rtx5070ti,S2_layer,early,distilbert,0.0001,42,0,3,0.6504673925712616,2026-10-13 23:53
+P2_early_distilbert_L3_lr2e-05_s42,rtx5070ti,S2_layer,early,distilbert,2e-05,42,3,3,0.7673688751440362,2026-10-13 23:53
+P2_early_roberta_L0_lr1e-03_s42,rtx5070ti,S2_layer,early,roberta,0.001,42,0,3,0.6554021223196496,2026-10-13 23:53
+P2_early_roberta_L3_lr1e-05_s42,rtx5070ti,S2_layer,early,roberta,1e-05,42,3,3,0.7793296535146532,2026-10-13 23:53
+P2_early_roberta_L6_lr1e-05_s42,rtx5070ti,S2_layer,early,roberta,1e-05,42,6,3,0.7901123733998467,2026-10-13 23:53
