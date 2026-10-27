@@ -1,7 +1,7 @@
 Langkah,Sisa baris,Dibuang
 Data mentah,1010826,0
-Hapus comment kosong,1010771,55
-Hapus teks kosong setelah cleaning,1009363,1408
-Hapus pasangan berlabel bertentangan,1009221,142
-Hapus pasangan duplikat,1008074,1147
-"Hapus artefak /s (you forgot the, ...)",1004249,3825
+Hapus comment kosong (NaN),1010771,55
+Hapus teks kosong setelah cleaning,1010762,9
+Hapus pasangan berlabel bertentangan,1010620,142
+Hapus pasangan duplikat,1009463,1157
+Hapus artefak /s,1000864,8599

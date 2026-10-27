@@ -69,5 +69,7 @@ logs/
 
 # Data turunan (besar, bisa dibuat ulang dari data/raw lewat notebook 02 dan 03)
 data/split/
+data/split_full/
 data/tokenized/
 data/tokenized_comment/
+data/tokenized_full/

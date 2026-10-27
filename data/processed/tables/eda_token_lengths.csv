@@ -1,3 +1,3 @@
 Model,Median,P95,P99,Max,% terpotong (> 256)
-roberta-base,32.0,108.0,204.0,1426,0.59
-distilbert-base-uncased,31.0,106.0,201.0,1415,0.61
+roberta-base,35.0,120.0,242.01,2104,0.86
+distilbert-base-cased,37.0,127.0,261.0,3777,1.03
