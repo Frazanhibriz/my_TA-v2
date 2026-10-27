@@ -100,7 +100,7 @@ RoBERTa-base \cite{liu2019roberta} has 12 layers, a hidden size of 768, and 124.
 u = [\,h_x;\; h_y;\; |h_x - h_y|;\; h_x \odot h_y\,],
 \label{eq:fusion}
 \end{equation}
-where $[\cdot\,;\cdot]$ denotes concatenation and $\odot$ element-wise multiplication. The vector $u$ is passed to the default classification head of the model with a four times larger input size. Consequently, the encoder runs twice per example and comment tokens cannot attend directly to parent tokens.
+where $[\cdot\,;\cdot]$ denotes concatenation and $\odot$ element-wise multiplication. The vector $u$ in (\ref{eq:fusion}) is passed to the default classification head of the model with a four times larger input size. Consequently, the encoder runs twice per example and comment tokens cannot attend directly to parent tokens.
 
 \subsection{Layer Freezing}
 Layer freezing is a form of selective fine-tuning because only a subset of the parameters is trained \cite{han2024peft}, and it can save GPU memory with only a small loss in accuracy \cite{ardakani2024slimfit}. The embedding layer and a number of the lowest layers were frozen in early fusion, namely 0, 6, 9, and 12 of the 12 RoBERTa layers and 0, 3, and 6 of the 6 DistilBERT layers. Partially frozen models used the best learning rate from full fine-tuning with three seeds. For fully frozen models, learning rates of $10^{-4}$ and $10^{-3}$ were tried with seed 42 and the better one on validation was selected. Freezing reduces only the training cost because all layers are still executed during inference.

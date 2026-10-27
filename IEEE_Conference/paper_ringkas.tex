@@ -102,7 +102,7 @@ RoBERTa-base \cite{liu2019roberta} memiliki 12 layer, ukuran hidden 768, dan 124
 u = [\,h_x;\; h_y;\; |h_x - h_y|;\; h_x \odot h_y\,],
 \label{eq:fusion}
 \end{equation}
-dengan $[\cdot\,;\cdot]$ penggabungan vektor dan $\odot$ perkalian per elemen. Vektor $u$ diteruskan ke head klasifikasi bawaan model dengan ukuran input empat kali lebih besar. Akibatnya, encoder dijalankan dua kali per contoh dan token comment tidak dapat memperhatikan token parent secara langsung.
+dengan $[\cdot\,;\cdot]$ penggabungan vektor dan $\odot$ perkalian per elemen. Vektor $u$ pada (\ref{eq:fusion}) diteruskan ke head klasifikasi bawaan model dengan ukuran input empat kali lebih besar. Akibatnya, encoder dijalankan dua kali per contoh dan token comment tidak dapat memperhatikan token parent secara langsung.
 
 \subsection{Pembekuan Layer}
 Pembekuan layer termasuk fine-tuning selektif karena hanya sebagian parameter yang dilatih \cite{han2024peft}, dan dapat menghemat memori GPU dengan penurunan akurasi kecil \cite{ardakani2024slimfit}. Embedding layer dan sejumlah layer terbawah dibekukan pada early fusion, yaitu 0, 6, 9, dan 12 dari 12 layer RoBERTa serta 0, 3, dan 6 dari 6 layer DistilBERT. Model yang dibekukan sebagian memakai learning rate terbaik dari fine-tuning penuh dengan tiga seed. Untuk model yang dibekukan seluruhnya, learning rate $10^{-4}$ dan $10^{-3}$ dicoba pada seed 42 dan dipilih yang terbaik di validasi. Pembekuan hanya mengurangi biaya training karena semua layer tetap dijalankan saat inferensi.
